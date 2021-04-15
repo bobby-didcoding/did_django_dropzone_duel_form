@@ -1,0 +1,45 @@
+{% extends 'users/base.html' %}
+{% load static %}
+
+
+{% block extend_head %}
+
+
+
+{% endblock %}
+
+{% block extend_nav %} 
+
+<ul class="sidenav">
+  <li><a href="{% url 'users:account' %}">Demo User Account</a></li>
+  <li><a href="{% url 'users:profile' %}">Demo Profile</a></li>
+  <li><a href="{% url 'users:images' %}">Demo Add Images</a></li>
+  <li><a class="active" href="{% url 'users:gallery' %}">Demo Gallery</a></li>
+  <li><a href="{% url 'users:sign-out' %}">Sign out</a></li>
+</ul>
+
+{% endblock %}
+
+
+{% block content %}
+
+<h3>Django Dropzone Demo - User Gallery for <b style="color:#9c07b6">{{request.user.first_name}} {{request.user.last_name}}</b></h3>
+
+
+<div class="img-container">
+
+
+  {% for i in images %}
+  <div class="gallery">
+    <img src="{{i.image.url}}" alt="Profile image {{i.id}}">
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endblock %}
+
+{% block extend_footer %}
+
+
+{% endblock %}
