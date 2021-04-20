@@ -6,6 +6,7 @@ var Drop = Dropzone.options.DidDropzone = {
     clickable: true, // This allows the dropzone to select images onclick
     acceptedFiles: '.jpg,.jpeg,.JPEG,.JPG,.png,.PNG', //accepted file types
     maxFiles: 10, //Maximum number of files/images in dropzone
+    parallelUploads: 10,
     previewTemplate: '<div class="dz-preview dz-image-preview">'+
                         '<div class="dz-image">'+
                         '<img data-dz-thumbnail />'+

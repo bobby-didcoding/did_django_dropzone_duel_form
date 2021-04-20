@@ -140,10 +140,9 @@ EMAIL_HOST = 'XXX'
 EMAIL_PORT = 'XXX'
 EMAIL_USE_TLS = 'XXX'
 EMAIL_HOST_USER = 'XXX'
-DISPLAY_NAME = "Dropzone duel form demo email"
+DISPLAY_NAME = "Dropzone demo email"
 DONOT_REPLY_EMAIL_PASSWORD = 'XXX'
-CURRENT_SITE = "XXX"
 
-GOOGLE_API_KEY = "XXX"
+GOOGLE_API_KEY = 'XXX'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
